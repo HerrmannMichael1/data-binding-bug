@@ -2,8 +2,8 @@ import { navigate } from 'gatsby'
 import { types } from 'react-bricks/frontend'
 
 import bricks from './bricks'
-import pageTypes from './pageTypes'
 import GatsbyLink from './GatsbyLink'
+import pageTypes from './pageTypes'
 
 const config: types.ReactBricksConfig = {
   appId: process.env.GATSBY_APP_ID,
@@ -29,6 +29,7 @@ const config: types.ReactBricksConfig = {
   enableAutoSave: true,
   disableSaveIfInvalidProps: false,
   enablePreview: true,
+  blockIconsPosition: types.BlockIconsPosition.OutsideBlock,
 }
 
 export default config
